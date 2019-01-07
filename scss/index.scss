@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+}
+
+.request {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  button,
+  input {
+    background: #000;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+.outputContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  #container,
+  #forecastContainer {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 10px 10px rgba(202, 183, 183, 0.3);
+
+    h1,
+    h4,
+    img,
+    button {
+      background: none;
+    }
+    button {
+      border-radius: 10px;
+      margin-right: 5px;
+    }
+    .forecast1,
+    .forecast2 {
+      background: none;
+      border: 1px solid hidden;
+      padding: 2px;
+      text-align: center;
+    }
+  }
+}
